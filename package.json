@@ -1,0 +1,13 @@
+{
+  "name": "n5-challenge",
+  "version": "1.0.0",
+  "description": "Microfrontend Architecture",
+  "scripts": {
+    "serve": "npm-run-all --parallel serve:*",
+    "serve:host": "cd host && npm run serve-module",
+    "serve:harry-potter": "cd harry-potter-characters && npm run serve-module",
+    "serve:rick-and-morty": "cd rick-and-morty-characters && npm run serve-module"
+  },
+  "author": "Juan Rigual",
+  "license": "ISC"
+}
