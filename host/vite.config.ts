@@ -12,6 +12,9 @@ export default defineConfig({
         HarryPotter: "http://localhost:3001/assets/remoteEntry.js",
         RickAndMorty: "http://localhost:3002/assets/remoteEntry.js",
       },
+      exposes: {
+        "./I18NPublisher": "./src/infra/i18n/i18n-publisher.ts",
+      },
       shared: ["react", "react-dom"],
     }),
   ],

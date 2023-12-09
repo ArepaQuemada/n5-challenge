@@ -9,6 +9,9 @@ export default defineConfig({
     federation({
       name: "RickAndMorty",
       filename: "remoteEntry.js",
+      remotes: {
+        Host: "http://localhost:3000/assets/remoteEntry.js",
+      },
       exposes: {
         "./App": "./src/App",
       },
