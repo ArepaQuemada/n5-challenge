@@ -3,7 +3,7 @@ import "./infra/i18n/init-i18n.ts";
 import { useFetcher } from "./hooks/useFetcher.ts";
 import { getCharacters } from "./services/get-characters.ts";
 import { Card } from "./components/Card/Card.tsx";
-import { GridCard } from "./components/GridCard.ts/GridCard.tsx";
+import { GridCard } from "Host/GridCard";
 
 function App() {
   const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import SwitchLang from "./component/SwitchLang";
+import SwitchLang from "./components/SwitchLang";
 import { charactersMap } from "./domain/characters";
 import { useState } from "react";
-import SelectMicrofrontend from "./component/SelectMicrofrontend";
+import SelectMicrofrontend from "./components/SelectMicrofrontend";
 import { Characters } from "./domain/models/characters";
 
 function App() {
