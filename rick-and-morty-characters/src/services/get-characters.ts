@@ -8,6 +8,7 @@ export type GetCharactersResponse = {
     id: string;
     name: string;
     image: string;
+    species: string;
   }[];
 };
 

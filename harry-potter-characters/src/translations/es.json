@@ -1,6 +1,7 @@
 {
   "translation": {
     "hp-heading": "Lista de personajes de Harry Potter",
-    "character-name": "Nombre"
+    "character-name": "Nombre",
+    "character-house": "Casa"
   }
 }

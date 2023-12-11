@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import "./infra/i18n/init-i18n.ts";
 import { useFetcher } from "./hooks/useFetcher.ts";
 import { getCharacters } from "./services/get-characters.ts";
+import { Card } from "./components/Card/Card.tsx";
+import { GridCard } from "./components/GridCard.ts/GridCard.tsx";
 
 function App() {
   const { t } = useTranslation();
@@ -10,19 +12,11 @@ function App() {
   return (
     <>
       <h1>{t("rm-heading")}</h1>
-      {data?.map((character) => (
-        <div key={character.id}>
-          <img
-            src={character.image}
-            alt={`${character.name} profile picture`}
-            loading="lazy"
-          />
-          <p>
-            <span>{t("character-name")}: </span>
-            {character.name}
-          </p>
-        </div>
-      ))}
+      <GridCard>
+        {data?.map(({ id, image, name, species }) => (
+          <Card key={id} image={image} name={name} species={species} />
+        ))}
+      </GridCard>
     </>
   );
 }

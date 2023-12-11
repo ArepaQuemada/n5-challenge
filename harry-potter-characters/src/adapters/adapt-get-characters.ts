@@ -9,6 +9,7 @@ export const adaptGetCharacters = (
       id: character.id,
       name: character.name,
       image: character.image,
+      house: character.house,
     };
   });
 };

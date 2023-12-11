@@ -1,6 +1,7 @@
 {
   "translation": {
     "rm-heading": "Rick and Morty characters list",
-    "character-name": "Name"
+    "character-name": "Name",
+    "character-species": "Species"
   }
 }

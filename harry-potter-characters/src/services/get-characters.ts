@@ -7,6 +7,7 @@ export type GetCharactersResponse = {
   id: string;
   name: string;
   image: string;
+  house: string;
 }[];
 
 export const getCharacters = async () => {
