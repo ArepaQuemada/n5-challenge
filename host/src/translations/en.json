@@ -1,6 +1,11 @@
 {
   "translation": {
-    "heading": "CharHub - The Character Hub",
-    "description": "Welcome to CharHub. Here you can find all related info regarding your favorite characters from a wide viriety of series."
+    "main-heading": "CharHub.",
+    "heading-nonbreakable-aux": "The",
+    "secondary-heading": "Character",
+    "end-heading": "Hub",
+    "description": "Welcome to CharHub. Here you can find all related info regarding your favorite characters from a wide viriety of series.",
+    "switch-lan-es": "Spanish",
+    "switch-lang-en": "English"
   }
 }

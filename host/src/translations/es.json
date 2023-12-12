@@ -1,6 +1,11 @@
 {
   "translation": {
-    "heading": "CharHub - El Centro de Personajes",
-    "description": "Bienvenido a CharHub. Aquí puedes encontrar toda la información relacionada con tus personajes favoritos de una amplia variedad de series."
+    "main-heading": "CharHub.",
+    "heading-nonbreakable-aux": "El",
+    "secondary-heading": "Centro",
+    "end-heading": "de Personajes",
+    "description": "Bienvenido a CharHub. Aquí puedes encontrar toda la información relacionada con tus personajes favoritos de una amplia variedad de series.",
+    "switch-lan-es": "Español",
+    "switch-lang-en": "Inglés"
   }
 }

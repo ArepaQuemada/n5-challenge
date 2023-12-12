@@ -4,6 +4,7 @@ import { useFetcher } from "./hooks/useFetcher.ts";
 import { getCharacters } from "./services/get-characters.ts";
 import { RMCard } from "./components/Card/RMCard.tsx";
 import { GridCard } from "Host/GridCard";
+import { H2Styled } from "./styled.ts";
 
 function App() {
   const { t } = useTranslation();
@@ -11,7 +12,9 @@ function App() {
   if (isLoading) return <>Loading...</>;
   return (
     <>
-      <h1>{t("rm-heading")}</h1>
+      <H2Styled>
+        Rick&nbsp;{t("heading-aux")}&nbsp;Morty {t("rm-heading")}
+      </H2Styled>
       <GridCard>
         {data?.map(({ id, image, name, species }) => (
           <RMCard key={id} image={image} name={name} species={species} />

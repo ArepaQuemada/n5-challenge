@@ -1,5 +1,6 @@
-import { charactersMap } from "../domain/characters";
-import { Characters, charactersNames } from "../domain/models/characters";
+import { charactersMap } from "../../domain/characters";
+import { Characters, charactersNames } from "../../domain/models/characters";
+import { StyledSelect } from "./styled";
 
 interface SelectMicrofrontendProps {
   onSelect: (microfront: Characters) => void;
@@ -7,13 +8,13 @@ interface SelectMicrofrontendProps {
 
 const SelectMicrofrontend = ({ onSelect }: SelectMicrofrontendProps) => {
   return (
-    <select onChange={(e) => onSelect(e.target.value as Characters)}>
+    <StyledSelect onChange={(e) => onSelect(e.target.value as Characters)}>
       {Object.keys(charactersMap).map((key) => (
-        <option key={key} value={key}>
+        <option className="--option" key={key} value={key}>
           {charactersNames[key as keyof typeof charactersNames]}
         </option>
       ))}
-    </select>
+    </StyledSelect>
   );
 };
 

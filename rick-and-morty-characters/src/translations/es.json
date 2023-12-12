@@ -1,6 +1,7 @@
 {
   "translation": {
-    "rm-heading": "Lista de personajes de Rick y Morty",
+    "rm-heading": "lista de personajes",
+    "heading-aux": "y",
     "character-name": "Nombre",
     "character-species": "Especie"
   }

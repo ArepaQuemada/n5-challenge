@@ -17,7 +17,7 @@ export default defineConfig({
         "./GridCard": "./src/components/GridCard/GridCard.tsx",
         "./Card": "./src/components/Card/Card.tsx",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "styled-components"],
     }),
   ],
   build: {

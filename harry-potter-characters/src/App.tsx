@@ -4,6 +4,7 @@ import { useFetcher } from "./hooks/useFetcher.ts";
 import { getCharacters } from "./services/get-characters.ts";
 import { GridCard } from "Host/GridCard";
 import { HPCard } from "./components/Card/HPCard.tsx";
+import { H2Styled } from "./styled.ts";
 
 function App() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ function App() {
   if (isLoading) return <>Loading...</>;
   return (
     <>
-      <h1>{t("hp-heading")}</h1>
+      <H2Styled>Harry&nbsp;Potter {t("hp-heading")}</H2Styled>
       <GridCard>
         {data?.map(({ id, image, name, house }) => (
           <HPCard key={id} image={image} name={name} house={house} />
