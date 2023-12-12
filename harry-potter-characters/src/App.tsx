@@ -3,7 +3,7 @@ import "./infra/i18n/init-i18n.ts";
 import { useFetcher } from "./hooks/useFetcher.ts";
 import { getCharacters } from "./services/get-characters.ts";
 import { GridCard } from "Host/GridCard";
-import { Card } from "./components/Card/Card.tsx";
+import { HPCard } from "./components/Card/HPCard.tsx";
 
 function App() {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ function App() {
       <h1>{t("hp-heading")}</h1>
       <GridCard>
         {data?.map(({ id, image, name, house }) => (
-          <Card key={id} image={image} name={name} house={house} />
+          <HPCard key={id} image={image} name={name} house={house} />
         ))}
       </GridCard>
     </>

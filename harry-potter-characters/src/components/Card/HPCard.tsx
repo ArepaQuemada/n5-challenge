@@ -1,29 +1,21 @@
 import { useTranslation } from "react-i18next";
 import { CardContainer } from "./styled";
 
-interface CardProps {
-  image: string;
-  name: string;
+interface CardProps extends React.ComponentProps<typeof CardContainer> {
   house: string;
 }
 
-export const Card = ({ image, name, house }: CardProps) => {
+export const HPCard = ({ image, name, house }: CardProps) => {
   const { t } = useTranslation();
   return (
-    <CardContainer>
-      <img
-        className="--avatar"
-        src={image}
-        alt={`${name} profile picture`}
-        loading="lazy"
-      />
+    <CardContainer image={image} name={name}>
       <p className="--item">
         <span className="--item">{t("character-name")}: </span>
         <span className="--item-value">{name}</span>
       </p>
-      <p>
+      <p className="--item">
         <span className="--item">{t("character-house")}: </span>
-        <span className="--item-value">{house}</span>
+        <span className="--.item-house">{house}</span>
       </p>
     </CardContainer>
   );

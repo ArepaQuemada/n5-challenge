@@ -15,6 +15,7 @@ export default defineConfig({
       exposes: {
         "./I18NPublisher": "./src/infra/i18n/i18n-publisher.ts",
         "./GridCard": "./src/components/GridCard/GridCard.tsx",
+        "./Card": "./src/components/Card/Card.tsx",
       },
       shared: ["react", "react-dom"],
     }),
